@@ -1,0 +1,59 @@
+:root {
+    --bg-color: #F0F8FF;
+    --lighter-color: #64c4ed;
+    --darker-color: #4f81c7;
+    --text-color: #F0F8FF;
+    --dark-text-color: #000;
+}
+
+.MainContent {
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 100px 500px 1fr;
+    border: 1px solid #00688B;
+}
+/* Title Bar styling */
+.MainTitle {
+    grid-column: 1 / span 3;
+    grid-row-start: 1;
+
+    padding: 20px;
+    background-color: #00688B;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+
+}
+
+.MainTitle--title {
+    flex-basis: 50%;
+}
+
+.MainTitle--baseInfo {
+    flex-basis: 50%;
+}
+
+.Chooser {
+    grid-column: 1 / span 3;
+    display: flex;
+    align-items: center;
+}
+
+.Chooser-choices input[type=checkbox] {
+
+}
+
+.Chooser-choices {
+
+}
+
+
+
+
+/* changing size of Title Bar text to account for wordwrap */
+@media screen and (max-width: 720px){
+    .MainTitle {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,30 @@
+/* Graph Area styling */
+.GraphArea {
+    grid-column: 2;
+    grid-column-gap: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/* individual bars */
+.GraphArea--barChart {
+    text-align: center;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    transition: filter, transform .5s;
+    background-color: var(--lighter-color);
+    color: var(--text-color);
+}
+
+
+.GraphArea--barChart:nth-of-type(even) {
+    background-color: var(--darker-color);
+    color: var(--text-color);
+}
+
+/* transition for hover and highligh */
+.GraphArea--barChart:hover {
+    transform: perspective(200px) translate3D(0em, -.2em, .5em);
+    filter: contrast(150%) drop-shadow(8px 8px 10px gray);
+
+}

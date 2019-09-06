@@ -1,0 +1,13 @@
+.Chooser {
+    grid-column: 1 / span 3;
+    display: flex;
+    align-items: center;
+}
+
+.Chooser-choices input[type=checkbox] {
+
+}
+
+.Chooser-choices {
+
+}

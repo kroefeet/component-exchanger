@@ -1,0 +1,20 @@
+/* Title Bar styling */
+.MainTitle {
+    grid-column: 1 / span 3;
+    grid-row-start: 1;
+
+    padding: 20px;
+    background-color: #00688B;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+
+}
+
+.MainTitle--title {
+    flex-basis: 50%;
+}
+
+.MainTitle--baseInfo {
+    flex-basis: 50%;
+}
